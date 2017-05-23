@@ -105,8 +105,8 @@
         if ([NSClassFromString(typeString) isSubclassOfClass:[NSString class]]) {
             
             //4、获取属性getter方法的选择器（属性名字就是getter）
-            SEL pItemSelector = NSSelectorFromString([NSString stringWithFormat:@"%s",propertyName]);
-            Method propertyGetter = class_getInstanceMethod([self class], pItemSelector);
+//            SEL pItemSelector = NSSelectorFromString([NSString stringWithFormat:@"%s",propertyName]);
+//            Method propertyGetter = class_getInstanceMethod([self class], pItemSelector);
             
             //5、获取实例变量的值
             const char *pName = [[NSString stringWithFormat:@"_%s",propertyName] UTF8String];
