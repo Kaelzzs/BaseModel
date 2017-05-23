@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZSBaseModel'
-  s.version          = '0.0.2'
-  s.summary          = 'A short description of ZSBaseModel.'
+  s.version          = '0.0.3'
+  s.summary          = '基于runtime的处理Model属性的异常状态'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 ZSBaseModel 添加NSString类型的属性的默认值 @“” 空串；避免 nil NULL等导致的UI显示问题  和 多出的解析步骤
                        DESC
 
-  s.homepage         = 'https://github.com/zzsat/ZSBaseModel'
+  s.homepage         = 'https://github.com/Kaelzzs/BaseModel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zzsat' => 'zhouzuosong_Kael@163.com' }
-  s.source           = { :git => 'https://github.com/zzsat/ZSBaseModel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Kaelzzs/BaseModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '5.0'
