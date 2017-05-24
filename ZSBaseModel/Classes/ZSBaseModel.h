@@ -23,6 +23,8 @@ typedef void (* _kVIMP) (id, SEL, ...);
 
 @interface ZSBaseModel : NSObject
 
+
+/*测试属性*/
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *age;
 @property (nonatomic,copy) NSString *sex;
@@ -61,15 +63,15 @@ typedef void (* _kVIMP) (id, SEL, ...);
 +(void)zs_resetIvarValueWithObject:(NSObject *)obj andDefaultString:(NSString *)defaultStr;
 
 /**
- 给自己类某些属性设置默认值 defaultStr （通过setter方法重置）
+ 给自己类某些属性设置默认值 defaultStr （通过setter方法重置）（不推荐，视情况而用）
 
  @param defaultStr 默认值
  */
--(void)zs_resetIvarValueWithDefaultString:(NSString *)defaultStr;
+-(void)zs_resetPropertyValueWithDefaultString:(NSString *)defaultStr;
 
 
 /**
- 修改NSString 类型的 Getter 并给予默认值 defaultStr (通过getter方法过滤)
+ 修改NSString 类型的 Getter 并给予默认值 defaultStr (通过getter方法过滤)(推荐)
 
  @param defaultStr 默认值
  */
@@ -92,6 +94,7 @@ typedef void (* _kVIMP) (id, SEL, ...);
 +(NSString *)getClassTypeWithAttribut:(const char *)attribut;
 
 
+/*测试方法*/
 #pragma mark - 测试功能方法
 -(void)logDog;
 

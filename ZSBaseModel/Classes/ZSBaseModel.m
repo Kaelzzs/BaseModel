@@ -84,13 +84,13 @@
     }
 }
 
--(void)zs_resetIvarValueWithDefaultString:(NSString *)defaultStr{
+-(void)zs_resetPropertyValueWithDefaultString:(NSString *)defaultStr{
 
     //1、获取属性
     //属性的数量
     u_int propertyCount = 0;
     objc_property_t *propertys = class_copyPropertyList([self class], &propertyCount);
-    
+
     //2、遍历属性
     for (int i = 0; i<propertyCount; i++) {
         //-------------------

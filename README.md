@@ -22,7 +22,7 @@ pod "ZSBaseModel"
 
 ## Author
 
-zzsat, zhouzuosong_Kael@163.com
+Kaelinda, zhouzuosong_Kael@163.com
 
 ## License
 

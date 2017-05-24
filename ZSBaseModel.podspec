@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZSBaseModel'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = '基于runtime的处理Model属性的异常状态'
 
 # This description is used to generate tags and improve search results.
